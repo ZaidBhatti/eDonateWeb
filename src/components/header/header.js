@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 import {
   Collapse,
   Navbar,
@@ -6,9 +6,9 @@ import {
   NavbarBrand,
   Nav,
   NavItem,
-  NavLink,
- } from 'reactstrap';
-import {FaIoxhost} from "react-icons/fa";
+  NavLink
+} from "reactstrap";
+import { FaIoxhost } from "react-icons/fa";
 export default class Header extends React.Component {
   constructor(props) {
     super(props);
@@ -41,10 +41,9 @@ export default class Header extends React.Component {
                 <NavLink href="#">Notifications</NavLink>
               </NavItem>
               <NavItem>
-                  <FaIoxhost />
+                <FaIoxhost />
                 <NavLink href="#">Profile</NavLink>
               </NavItem>
-             
             </Nav>
           </Collapse>
         </Navbar>
