@@ -1,9 +1,9 @@
-import React, { Component } from "react";
-import { Container, Row, Col } from "reactstrap";
-import "./App.css";
-import Header from "./components/header/header";
-import CardComponent from "./components/card/card";
-import { Button } from "reactstrap";
+import React, { Component } from 'react';
+import { Container, Row, Col } from 'reactstrap';
+import './App.css';
+import Header from './components/header/header';
+import CardComponent from './components/card/card';
+import { Button } from 'reactstrap';
 
 class App extends Component {
   render() {
@@ -19,7 +19,7 @@ class App extends Component {
               <CardComponent />
               <Button color="primary" size="lg">
                 Avail Donation
-              </Button>{" "}
+              </Button>{' '}
             </Col>
           </Row>
         </Container>
