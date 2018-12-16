@@ -1,25 +1,27 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+import { Container, Row, Col } from 'reactstrap';
 import './App.css';
+import Header from './components/header/header';
+import CardComponent from './components/card/card';
+import { Button } from 'reactstrap';
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
+      <Header></Header>
+      <Container>
+        <Row>
+          <Col sm="12" md={{ size: 6, offset: 3 }}>
+          <Row>
+            <Col>Item Details</Col>
+          </Row>
+            <CardComponent></CardComponent>
+            <Button color="primary" size="lg">Avail Donation</Button>{' '}
+          </Col>
+        </Row>
+      </Container>
+
       </div>
     );
   }
